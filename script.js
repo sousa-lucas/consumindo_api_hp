@@ -4,7 +4,7 @@ const characterImage = document.getElementById('characterImage');
 const characterName = document.getElementById('characterName');
 const characterHouse = document.getElementById('characterHouse');
 const characterBirth = document.getElementById('characterBirth');
-const characterGender = document.getElementById('characterGender');
+const characterActor = document.getElementById('characterActor');
 const houseCrest = document.getElementById('houseCrest');
 
 const houseCrests = {
@@ -30,7 +30,7 @@ function displayCharacterInfo(character) {
     characterName.textContent = character.name;
     characterHouse.textContent = `Casa: ${character.house || 'Desconhecida'}`;
     characterBirth.textContent = `Data de Nascimento: ${character.dateOfBirth || 'Desconhecida'}`;
-    characterGender.textContent = `Ator:  ${character.actor}`;
+    characterActor.textContent = `Ator:  ${character.actor}`;
     
     // Atualiza o brasão da casa
     houseCrest.src = houseCrests[character.house] || '';
